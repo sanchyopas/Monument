@@ -15,6 +15,22 @@ if (isMobile()) {
   document.documentElement.classList.add('_pc');
 }
 
+let widthScrollBar = window.innerWidth - document.documentElement.clientWidth;
+
+// Блокировка скрола
+export const bodyLock = (e) => {
+  document.body.classList.add('_lock');
+  // document.querySelector('.header').style.marginRight = widthScrollBar + 'px';
+  document.body.style.paddingRight = widthScrollBar + 'px';
+};
+
+// Удаление блокировки скролла
+export const bodyUnLock = (e) => {
+  document.body.style.paddingRight = '0px';
+  // document.querySelector('.header').style.marginRight = '0px';
+  document.body.classList.remove('_lock');
+};
+
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
 export function isWebp() {
   // Проверка поддержки webp
