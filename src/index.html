@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html>
-    @@include('html/head.html', {
-        "title":"Сборка GULP"
-    })
-    <body>
-        @@include('html/_header.html')
+@@include('html/head.html', {
+"title":"Сборка GULP"
+})
+<body>
+@@include('html/_header.html')
 
-        <main>
-            @@include('html/_hello.html')
-        </main>
+<main>
+  <div class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1>
+            Гранитные памятники
+            <span>на могилу для тех, кто был</span> Вам
+            <span> так дорог....</span>
+          </h1>
+          <hr>
+          <p>
+            Изготавливаем памятники на могилу в короткие сроки с установкой в Томской, Новосибирской и Кемеровской
+            областях Компания с 25 летним опытом в производстве
+          </p>
 
-        @@include('html/_footer.html')
+          <div class="hero__btns">
+            <button type="button" class="hero__btn btn btn--primary">
+              Оставить заявку
+              <img src="@img/icon/i-arrow-right-white.svg" alt="">
+            </button>
+            <a href="" type="button" class="hero__btn btn btn--outline">
+              Каталог
+              <img src="@img/icon/i-arrow-right-dark.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="@img/hero-image.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
-        <script src="js/app.min.js"></script>
-    </body>
+@@include('html/_footer.html')
+
+<script src="js/app.min.js"></script>
+</body>
 </html>
