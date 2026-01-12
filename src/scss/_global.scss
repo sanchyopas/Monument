@@ -74,3 +74,9 @@
   text-decoration-color: $secondaryColor;
   color: $primaryColor;
 }
+
+.socials {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
